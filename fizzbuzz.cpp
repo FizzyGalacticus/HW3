@@ -15,10 +15,11 @@ using std::string;
 
 const string fizzBuzz(const int num)
 {
+	if(num % 3 == 0) return "Fizz";
 	return "";
 }
 
 TEST_CASE("FizzBuzz values to be computed", "[fizzBuzz]")
 {
-	for(int i = 1; i < 101; i++) REQUIRE(fizzBuzz(i) == "FizzBuzz");
+	REQUIRE(fizzBuzz(1) == "Fizz");
 }
