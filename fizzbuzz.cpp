@@ -13,10 +13,13 @@ using std::endl;
 #include <string>
 using std::string;
 
+//Pre: Numbers passed to this function must be >= -100 and <= 100.
+//If number falls out of this range, undefined behavior might occurr.
+//Post: This function will return a string appropriate to number given.
 const string fizzBuzz(const int num)
 {
 	if(num % 3 == 0) return "Fizz";
-	
+	if(num % 5 == 0) return "Buzz";
 	char buffer[3];
 	return itoa(num, buffer, 10);
 }
