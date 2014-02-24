@@ -30,4 +30,7 @@ TEST_CASE("FizzBuzz values to be computed", "[fizzBuzz]")
 	REQUIRE(fizzBuzz(3) == "Fizz");
 	REQUIRE(fizzBuzz(5) == "Buzz");
 	REQUIRE(fizzBuzz(15) == "FizzBuzz");
+	REQUIRE(fizzBuzz(23) == "23");
+	REQUIRE(fizzBuzz(60) == "FizzBuzz");
+	REQUIRE(fizzBuzz(100) == "Buzz");
 }
