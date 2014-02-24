@@ -10,12 +10,15 @@
 using std::cout;
 using std::endl;
 
-const bool fizzBuzz(const int num)
+#include <string>
+using std::string;
+
+const string fizzBuzz(const int num)
 {
-	return false;
+	return "";
 }
 
 TEST_CASE("FizzBuzz values to be computed", "[fizzBuzz]")
 {
-	REQUIRE(fizzBuzz(0));
+	for(int i = 1; i < 101; i++) REQUIRE(fizzBuzz(i) == "FizzBuzz");
 }
