@@ -21,5 +21,5 @@ const string fizzBuzz(const int num)
 
 TEST_CASE("FizzBuzz values to be computed", "[fizzBuzz]")
 {
-	REQUIRE(fizzBuzz(1) == "Fizz");
+	REQUIRE(fizzBuzz(3) == "Fizz");
 }
