@@ -16,10 +16,13 @@ using std::string;
 const string fizzBuzz(const int num)
 {
 	if(num % 3 == 0) return "Fizz";
-	return "";
+	
+	char buffer[3];
+	return itoa(num, buffer, 10);
 }
 
 TEST_CASE("FizzBuzz values to be computed", "[fizzBuzz]")
 {
 	REQUIRE(fizzBuzz(3) == "Fizz");
+	REQUIRE(fizzBuzz(5) == "Buzz");
 }
