@@ -13,5 +13,5 @@ of both three and five print "FizzBuzz".
 
 The first Kata practice: String Calculator - 
 A function that takes a string of up to
-three numbers and returns the sum. If the
+three numbers and returns their sum. If the
 string is empty, it will return 0.

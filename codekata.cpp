@@ -47,5 +47,6 @@ TEST_CASE("Testing values for each CodeKata", "[CodeKata]")
 	{
 		REQUIRE(stringCalc("1") == 1);
 		REQUIRE(stringCalc("1,2") == 3);
+		REQUIRE(stringCalc("2,3") == 5);
 	}
 }
