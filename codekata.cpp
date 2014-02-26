@@ -25,6 +25,11 @@ const string fizzBuzz(const int num)
 	return itoa(num, buffer, 10);
 }
 
+const int stringCalc(const string numbers)
+{
+	return 0;
+}
+
 TEST_CASE("Testing values for each CodeKata", "[CodeKata]")
 {
 	SECTION("Testing FizzBuzz Code")
@@ -39,6 +44,6 @@ TEST_CASE("Testing values for each CodeKata", "[CodeKata]")
 	
 	SECTION("Testing String Calculator Code")
 	{
-		
+		REQUIRE(stringCalc("1") == 1);
 	}
 }
