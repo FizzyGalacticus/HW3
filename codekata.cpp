@@ -25,12 +25,20 @@ const string fizzBuzz(const int num)
 	return itoa(num, buffer, 10);
 }
 
-TEST_CASE("FizzBuzz values to be computed", "[fizzBuzz]")
+TEST_CASE("Testing values for each CodeKata", "[CodeKata]")
 {
-	REQUIRE(fizzBuzz(3) == "Fizz");
-	REQUIRE(fizzBuzz(5) == "Buzz");
-	REQUIRE(fizzBuzz(15) == "FizzBuzz");
-	REQUIRE(fizzBuzz(23) == "23");
-	REQUIRE(fizzBuzz(60) == "FizzBuzz");
-	REQUIRE(fizzBuzz(100) == "Buzz");
+	SECTION("Testing FizzBuzz Code")
+	{
+		REQUIRE(fizzBuzz(3) == "Fizz");
+		REQUIRE(fizzBuzz(5) == "Buzz");
+		REQUIRE(fizzBuzz(15) == "FizzBuzz");
+		REQUIRE(fizzBuzz(23) == "23");
+		REQUIRE(fizzBuzz(60) == "FizzBuzz");
+		REQUIRE(fizzBuzz(100) == "Buzz");
+	}
+	
+	SECTION("Testing String Calculator Code")
+	{
+		
+	}
 }
