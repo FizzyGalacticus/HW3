@@ -27,7 +27,7 @@ const string fizzBuzz(const int num)
 
 const int stringCalc(const string numbers)
 {
-	return 0;
+	return 1;
 }
 
 TEST_CASE("Testing values for each CodeKata", "[CodeKata]")
